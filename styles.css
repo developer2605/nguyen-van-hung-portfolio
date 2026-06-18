@@ -265,7 +265,7 @@ h1 span { color: var(--primary); }
 .case-kpis strong, .case-kpis span { display: block; }
 .case-kpis strong { font-size: 1.55rem; color: var(--navy); }
 .case-kpis span { color: var(--muted); font-size: .84rem; margin-top: 3px; }
-.case-content-grid { display: grid; grid-template-columns: 1fr .9fr; gap: 40px; align-items: center; }
+.case-content-grid { display: grid; grid-template-columns: 1fr .9fr; gap: 40px; align-items: center; margin-top: 10px;}
 .case-content-grid h4 { font-size: 1.15rem; margin: 22px 0 10px; }
 .case-content-grid h4:first-child { margin-top: 0; }
 .case-content-grid p { color: #536f82; }
@@ -274,7 +274,7 @@ h1 span { color: var(--primary); }
 .strategy-list span { flex: none; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; background: var(--soft-2); color: var(--primary-dark); font-size: .78rem; font-weight: 900; }
 .funnel-panel { background: #0b2f4e; color: #fff; border-radius: 24px; padding: 24px; box-shadow: 0 18px 42px rgba(7, 47, 79, .22); }
 .funnel-title { text-transform: uppercase; font-size: .75rem; letter-spacing: 0; font-weight: 800; color: #9ed9ff; margin-bottom: 16px; }
-.funnel-step { margin: 0 auto; min-height: 54px; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; border-radius: 12px; background: linear-gradient(90deg, #1688d9, #58baf2); }
+.funnel-step { margin: 0 auto; min-height: 54px; display: flex; align-items: center; justify-content: center; padding: 0 18px; border-radius: 12px; background: linear-gradient(90deg, #1688d9, #58baf2); }
 .funnel-step strong { font-size: 1.15rem; }
 .funnel-step span { font-size: .84rem; }
 .step-1 { width: 100%; }
@@ -288,7 +288,7 @@ h1 span { color: var(--primary); }
 .case-outcome {
   margin-top: 18px;
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 86px 1fr;
   gap: 16px;
   align-items: start;
   padding: 18px 20px;
