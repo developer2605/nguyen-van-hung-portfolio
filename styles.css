@@ -566,3 +566,43 @@ h1 span { color: var(--primary); }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Làm mờ dữ liệu cần bảo mật */
+.privacy-blur {
+  display: inline-block;
+  filter: blur(6px);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Làm mờ cả một khối */
+.privacy-blur-block {
+  filter: blur(7px);
+  user-select: none;
+  pointer-events: none;
+}
+
+.private-data {
+  position: relative;
+  display: inline-block;
+}
+
+.private-data > span {
+  display: inline-block;
+  filter: blur(7px);
+  user-select: none;
+}
+
+.private-data::after {
+  content: "Dữ liệu bảo mật";
+  position: absolute;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(15, 35, 65, 0.85);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+}
